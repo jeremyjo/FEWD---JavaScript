@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Asking a question, printing to page</title>
+
+
+    </head>
+
+    <body>
+        <script>
+            // var name = prompt("What is your name?");
+            // var favFood = prompt("What do you like to eat the most?");
+
+            // var hEle = document.createElement("h1");
+            // var tNode = document.createTextNode('hi, ' + name + ' I really like ' + favFood + ' too!');
+            // hEle.appendChild(tNode);
+            // document.body.appendChild(hEle);
+
+            // function createH1() {
+            //     var hEle = document.createElement('h1');
+            //     var tn = document.createTextNode("hi");
+            //     hEle.appendChild(tn);
+            //     document.body.appendChild(hEle);
+            // }
+
+            // createH1();         // call the function
+
+            // function to add content to the HTML page
+            function createH1(text) {
+                var hEle = document.createElement('h1');
+                var tn = document.createTextNode(text);
+                hEle.appendChild(tn);
+                document.body.appendChild(hEle);
+            }
+
+            createH1('This is the first heading');
+            createH1('This is the second heading');
+            createH1(prompt( "Please enter a message") );
+        </script>
+    </body>
+
+</html>
