@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Asking a question, printing to page</title>
+
+
+    </head>
+
+    <body>
+        <script>
+            // named function
+            function multiply (a, b) {
+                var result = a * b;
+                console.log (result);
+                return result;
+            }
+            var multiplied = multiply (3,4);        // calling the function
+
+            // annonymous function
+            var divide = function(){
+                var result = 3/4;
+                // can do + or "," on console.log
+                console.log ( '3 divided by 4 is ', result );
+            }
+
+            divide();
+
+            // IIFEs (Immediately Invoked Function Expression). Runs automatically, don't need to call. They are also annonymous fuctions.
+            ( function () {
+                var results = 12 / 0.75;
+                console.log ("12 divided by 0.75 is ", results);
+            }()             // these () are the parameters
+            )
+        </script>
+    </body>
+
+</html>
