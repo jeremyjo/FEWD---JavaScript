@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Math Functions</title>
+
+        <script>
+            Math.random();          // random number, between 0 - 0.99999
+            Math.random() * 10;     // whole number with decimals, between 0 - 9.999
+            console.log(Math.floor(Math.random()*10));           // round down to closest whole number
+            
+            //ex 01 version a
+            var randomWords = ["dog", "cave", "turtle", "rock", "princess"];
+            var randomIndex = Math.floor(Math.random()*5);
+            console.log(randomWords[randomIndex]);
+
+            // ex 01 version b 
+            var rando = randomWords[ Math.floor(Math.random()*5) ];
+            console.log(rando);
+
+            // ex 03
+            var customWords = ["dog", "cave", "turtle", "rock", "princess", "extra"]
+            console.log (customWords[ Math.floor(Math.random()*customWords.length) ] );
+
+            var phrases = [
+                "Sounds good!",
+                "Not today.",
+                "I don't like it.",
+                "That's special",
+                "Maybe...",
+                "Should I have another milkshake?"
+            ];
+
+            alert( phrases[ Math.floor( Math.random() * phrases.length ) ] );
+                
+        </script>
+    </head>
+
+    <body>
+        <h1>Hello!</h1>
+    </body>
+
+</html>

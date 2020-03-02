@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Math Functions</title>
+
+        <script>
+            var randomBodyParts = ['face', 'Big toe', 'smile', 'left leg'];
+            var randomAdjs = ['Beautiful', 'Glowing', 'Generous', 'Full', 'Cute'];
+            var randomWords = ['Shark', 'Fly', 'Monkey', 'Sloth', 'Sea Turtle'];
+
+            // ex02 version a
+            var randomIndex = [Math.floor( Math.random() * randomBodyParts.length ), Math.floor( Math.random() * randomAdjs.length ), Math.floor( Math.random() * randomWords.length )];
+            console.log ( "Your " + randomBodyParts[randomIndex[0]] + " is like a very " + randomAdjs[randomIndex[1]] + " " + randomWords[randomIndex[2]] );
+
+
+            // ex02 version b
+            var bp = randomBodyParts[Math.floor( Math.random() * randomBodyParts.length)];
+            var a = randomAdjs[Math.floor( Math.random() * randomAdjs.length)];
+            var w = randomWords[Math.floor( Math.random() * randomWords.length)];
+            console.log( "Your " + bp + " is like a very " + a + " " + w );
+
+            
+        </script>
+    </head>
+
+    <body>
+        <h1>Hello!</h1>
+    </body>
+
+</html>
